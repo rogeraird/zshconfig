@@ -40,7 +40,7 @@ alias e="emacs -nw"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rvm)
+plugins=(git rvm nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -56,3 +56,6 @@ promptinit
 
 # Customize to your needs...
 export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/bin/core_perl:$HOME/bin/scala/bin
+
+export NVM_DIR="/home/roger/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
