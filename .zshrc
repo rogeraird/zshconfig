@@ -11,6 +11,7 @@ ZSH_THEME="roger"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias e="emacs -nw"
+alias atom="atom ."
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
