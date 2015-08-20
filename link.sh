@@ -5,5 +5,6 @@ if [ -d "$HOME/.oh-my-zsh" ]; then
     echo "Now source ~/.zshrc or relog, your old configuration is located at ~/.zshrc.bak"
 else
     echo "Unable to link .zshrc and roger.zsh-theme. (Have you installed Oh My Zsh?)"
+    return 1
 fi
 
