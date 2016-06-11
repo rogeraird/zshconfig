@@ -56,7 +56,7 @@ promptinit
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/bin/core_perl:$HOME/bin/scala/bin
+export PATH=$PATH:${HOME}/bin
 
 export NVM_DIR="/home/roger/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
