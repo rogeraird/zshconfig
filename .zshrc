@@ -58,5 +58,5 @@ promptinit
 # Customize to your needs...
 export PATH=$PATH:${HOME}/bin
 
-export NVM_DIR="/home/roger/.nvm"
+export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
