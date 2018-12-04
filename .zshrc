@@ -12,6 +12,7 @@ ZSH_THEME="roger"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias e="emacs -nw"
 alias atom="atom ."
+alias dirs='dirs -v'
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
