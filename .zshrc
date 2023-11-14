@@ -13,7 +13,6 @@ ZSH_THEME="roger"
 alias e="emacs -nw"
 alias emacsd="emacs --daemon"
 alias ec="emacsclient -c"
-alias atom="atom ."
 alias dirs='dirs -v'
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -59,7 +58,7 @@ promptinit
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
 
 # Customize to your needs...
-export PATH=$PATH:${HOME}/bin
+export PATH=$PATH:${HOME}/bin:${HOME}/.local/bin
 
 export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
