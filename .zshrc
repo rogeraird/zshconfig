@@ -58,7 +58,20 @@ promptinit
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
 
 # Customize to your needs...
-export PATH=$PATH:${HOME}/bin:${HOME}/.local/bin:${HOME}/.cargo/bin:${HOME}/.asdf/asdf.sh
-
+export PATH=$PATH:${HOME}/bin:${HOME}/.local/bin:${HOME}/.cargo/bin:${HOME}/.asdf/asdf.sh:/usr/local/go/bin:${HOME}/zig:${HOME}/alacritty/target/release:${HOME}/.cabal/bin
+export PATH=$PATH:${HOME}/zig/zig-linux-x86_64-0.12.0-dev.1856+94c63f31f
 export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+[ -f "/home/roger/.ghcup/env" ] && source "/home/roger/.ghcup/env" # ghcup-env
+# bun completions
+[ -s "/home/roger/.bun/_bun" ] && source "/home/roger/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+eval "$(starship init zsh)"
+
+eval "$(~/.rbenv/bin/rbenv init - zsh)"
