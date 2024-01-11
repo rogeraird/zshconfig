@@ -58,8 +58,8 @@ promptinit
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
 
 # Customize to your needs...
-export PATH=$PATH:${HOME}/bin:${HOME}/.local/bin:${HOME}/.cargo/bin:${HOME}/.asdf/asdf.sh:/usr/local/go/bin:${HOME}/zig:${HOME}/alacritty/target/release:${HOME}/.cabal/bin:${HOME}/go/bin
-export PATH=$PATH:${HOME}/zig/zig-linux-x86_64-0.12.0-dev.1856+94c63f31f
+export PATH=$PATH:${HOME}/bin:${HOME}/.local/bin:${HOME}/.cargo/bin:${HOME}/.asdf/asdf.sh:/usr/local/go/bin:${HOME}/alacritty/target/release:${HOME}/.cabal/bin:${HOME}/go/bin
+export PATH=$PATH:${HOME}/zig/zig-linux-x86_64-0.12.0-dev.2139+e025ad7b4
 export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
