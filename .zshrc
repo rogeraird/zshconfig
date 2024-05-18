@@ -59,7 +59,7 @@ promptinit
 
 # Customize to your needs...
 export PATH=$PATH:${HOME}/bin:${HOME}/.local/bin:${HOME}/.cargo/bin:${HOME}/.asdf/asdf.sh:/usr/local/go/bin:${HOME}/alacritty/target/release:${HOME}/.cabal/bin:${HOME}/go/bin
-export PATH=$PATH:${HOME}/zig/zig-linux-x86_64-0.12.0-dev.2139+e025ad7b4
+export PATH=$PATH:${HOME}/zig/zig-linux-x86_64-0.11.0
 export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -75,3 +75,12 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 eval "$(starship init zsh)"
 
 eval "$(~/.rbenv/bin/rbenv init - zsh)"
+
+# Wasmer
+export WASMER_DIR="/home/roger/.wasmer"
+
+export GIT_EDITOR="nvim"
+[ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
+
+# opam configuration
+[[ ! -r /home/roger/.opam/opam-init/init.zsh ]] || source /home/roger/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
