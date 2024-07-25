@@ -43,26 +43,20 @@ alias dirs='dirs -v'
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rvm nvm asdf)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-
-autoload -U promptinit
-promptinit
 
 autoload -U compinit promptinit
 compinit
 promptinit
 
-# Run rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
-
+eval "$(mise activate zsh)"
 # Customize to your needs...
 export PATH=$PATH:${HOME}/bin:${HOME}/.local/bin:${HOME}/.cargo/bin:${HOME}/.asdf/asdf.sh:/usr/local/go/bin:${HOME}/alacritty/target/release:${HOME}/.cabal/bin:${HOME}/go/bin
-export PATH=$PATH:${HOME}/zig/zig-linux-x86_64-0.11.0
+export PATH=$PATH:~/zig/zig-linux-x86_64-0.13.0
+export PATH=$PATH:~/Odin
 export NVM_DIR="${HOME}/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 [ -f "/home/roger/.ghcup/env" ] && source "/home/roger/.ghcup/env" # ghcup-env
 # bun completions
@@ -71,10 +65,9 @@ export NVM_DIR="${HOME}/.nvm"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH=$PATH:"/home/roger/foss/alacritty/target/release/"
 
 eval "$(starship init zsh)"
-
-eval "$(~/.rbenv/bin/rbenv init - zsh)"
 
 # Wasmer
 export WASMER_DIR="/home/roger/.wasmer"
@@ -84,3 +77,6 @@ export GIT_EDITOR="nvim"
 
 # opam configuration
 [[ ! -r /home/roger/.opam/opam-init/init.zsh ]] || source /home/roger/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+export MODULAR_HOME="/home/roger/.modular"
+export PATH="/home/roger/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
+
